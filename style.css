@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 37.5rem;
+  border-radius: 14px; 
+  position: relative;
+}
+
+.header-svg {
+  border-radius: 14px 14px 0 0;
+  z-index: -1;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100px;
+  max-width: 100px;
+  border-radius: 50px;
+  align-self: end;
+  position: relative;
+  z-index: 1;
+  right: 12rem;
+  bottom: 5rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 3rem;
+}
+
+.name-age {
+  display: flex;
+  position: relative;
+  bottom: 1rem;
+}
+
+.name-age > p:nth-child(1) {
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.profile-info > p:first-of-type {
+  position: relative;
+  font-size: 1.5rem;
+  bottom: 3rem;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: 3rem;
+}
+
+.stats > p:first-of-type {
+  font-weight: bold;
+}
+
+.stats > p:nth-child(2) {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: var(--dark-grayish-blue);
+  position: relative;
+  bottom: 1.2rem
+}
+
+.stats-1 {
+  position: relative;
+  left: 3rem;
+}
+
+.stats-1 > p:nth-child(2) {
+  right: 1rem;
+}
+
+.stats-2 {
+  position: relative;
+  right: .5rem;
+}
+
+.stats-2 > p:nth-child(2) {
+  left: .8rem;
+}
+
+.stats-3 {
+  position: relative;
+  right: 2.3rem;
+}
