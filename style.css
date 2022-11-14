@@ -21,6 +21,15 @@ html {
 }
 
 body {
+  background-color: var(--dark-cyan);
+  background-image:
+    url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-size: cover;
+  background-position:
+    bottom 45vh right 45vw,
+    top 45vh left 45vw;
+  background-repeat: no-repeat;
   font-size: 1.8rem;
   font-family: 'Kumbh Sans', sans-serif;
   height: 100vh;
@@ -36,21 +45,26 @@ body {
   max-width: 37.5rem;
   border-radius: 14px; 
   position: relative;
+  z-index: 0;
+  background-color: white;
+  margin-bottom: 2rem;
 }
 
 .header-svg {
   border-radius: 14px 14px 0 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .profile-pic {
   width: 100%;
   height: 100px;
   max-width: 100px;
+  outline: 4px solid white;
+  outline-offset: -2px;
   border-radius: 50px;
   align-self: end;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   right: 12rem;
   bottom: 5rem;
 }
@@ -78,7 +92,7 @@ body {
 .profile-info > p:first-of-type {
   position: relative;
   font-size: 1.5rem;
-  bottom: 3rem;
+  bottom: 3.4rem;
 }
 
 .stats-container {
@@ -86,7 +100,8 @@ body {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  bottom: 3rem;
+  bottom: 4rem;
+  margin-bottom: -4rem;
 }
 
 .stats > p:first-of-type {
